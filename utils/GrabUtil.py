@@ -16,7 +16,6 @@ def recluseShortElementRecord(element,grabService,levelNum):
         for  i in element.__getattribute__('attributes'):
             pass
         for i in element.__getattribute__('childs'):
-            #if(levelNum==3 and str(i)=="<b:CityDayAQIPublishLive>"):
             if (levelNum == 3 and str(i) == grabService.tag):
                 if(isinstance(grabService,BaseGrab.BaseGrab)):
                     entity = grabService.parseEntity(i)

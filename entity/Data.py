@@ -1,4 +1,5 @@
-class CityDailyAqi:
+from entity import Base
+class CityDailyAqi(Base.Base):
 
     def __init__(self,id,aqi,area,cityCode,timePoint,
                  so2_24h,co_24h,no2_24h,o3_8h_24h,pm10_24h,pm2_5_24h,
